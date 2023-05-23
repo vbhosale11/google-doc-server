@@ -26,7 +26,7 @@ const defaultValue = ""  //default value of the document
 
 const io = require('socket.io')(server, {    //creating the socket
     cors: {                              //configuring the socket
-        origin: "http://localhost:3000",  //origin of the socket
+        origin: "*",  //origin of the socket
         methods: ["GET", "POST"]          //methods of the socket
     },
 })
